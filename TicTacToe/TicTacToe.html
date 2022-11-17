@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="footer">
+            <h1 class="toast"></h1>
+            <button class="restart pulse">restart</button>
+        </div>
+        
+
+
+        <script src="TicTacToe.js"></script>
+    </body>
+    <style>
+        body{
+            background-image: url("https://wallpapercave.com/wp/wp8984722.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            margin: 50px auto;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            border: 2px solid black;
+            box-sizing: border-box;
+
+        }
+        .footer{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 300px;
+            height: 50px;
+            background-color: rgb(90, 4, 83);
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            border: none;
+            
+        }    
+
+        .pulse:hover, 
+        .pulse:focus {
+            animation: pulse 1s;
+            box-shadow: 0 0 0 20px transparent;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #642243; }
+        }
+    </style>
+</html>
